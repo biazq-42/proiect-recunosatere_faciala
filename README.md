@@ -1,4 +1,4 @@
-# Proiectce are ca scop Recunoașterea Facială
+# Proiect ce are ca scop Recunoașterea Facială
 
 Acesta este un proiect care folosește Python pentru a recunoaște fețe în timp real folosind camera web.
 
