@@ -15,13 +15,7 @@ while True:
 
   
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-
-    # Detectam fetele
-    # scaleFactor=1.1 inseamna ca micsoram imaginea cu 10% la fiecare pas pentru a gasi fete de marimi diferite
-    # minNeighbors=5 ajuta la eliminarea erorilor (fete false)
     faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))
-
-    # Desenam un patrat pentru fiecare fata gasita
     for (x, y, w, h) in faces:
         cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
         
